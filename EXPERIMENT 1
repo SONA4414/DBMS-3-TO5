@@ -1,0 +1,13 @@
+1.	What is a cursor, and what are its operations? What are the attributes of a cursor explain with an example?
+•	Cursor is a temporary memory or temporary workstation.
+•	It is a allocated by database server at the time of performing DML operation on table by user.
+•	Cursor are used to store database tables.
+•	There are two types of curses.
+1)	Implicit
+2)	Explicit
+Implicit cursor:
+•	Also known as different cursors of SQL Server
+•	They are alleged by the SQL server when the user performs DML commands.
+Explicit cursor:
+•	Explicit cursor is created by user whenever the user requires them.
+•	Explicit cursor is used for fetching data from table and row by row manner.
