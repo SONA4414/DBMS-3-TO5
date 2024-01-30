@@ -1,0 +1,26 @@
+Unit-4
+1.	Explain about insertion, updation, deletion anomalies in relational database with an example?
+•	Anomalies in relational databases are errors that can occur when data is inserted, updated, or deleted.
+•	These errors can cause the database to become inconsistent or inaccurate.
+•	There are three main types of anomalies: insertion, update, and deletion.
+Insertion anomalies:
+ 
+•	occur when new data is added to the database and it causes an inconsistency. For example, if you try to add a new student to a database, but you forget to enter their grade, the database will be inconsistent.
+Example:
+Insert into student values(7, ‘G’,16, ‘PETROLEUM’,104, ‘NAMAN’); Select * from Student;
+Update anomalies:
+•	occur when data is updated in the database and it causes an inconsistency. For example, if you try to update a student's grade, but you only update the grade in one of the student's classes, the database will be inconsistent.
+Example:
+Update STUDENT
+Set HOD_NAME= ‘RAHUL’ WHERE BRANCH= ‘CIVIL’;
+Select * from STUDENT;
+Deletion anomalies:
+•	occur when data is deleted from the database and it causes an inconsistency. For example, if you try to delete a student from a database, but you forget to delete their grades, the database will be inconsistent.
+Example:
+Delete from STUDENT WHERE BRANCH= ‘ELECTRICAL’;
+Select * from STUDENT;
+Anomalies can be avoided by following certain rules when designing and using relational databases.
+These rules include:
+•	Using primary keys: to uniquely identify each record in the database.
+•	Normalizing the database: to reduce redundancy and improve consistency.
+•	Using constraints: to enforce data integrity.
