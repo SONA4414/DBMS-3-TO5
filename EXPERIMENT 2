@@ -1,0 +1,88 @@
+2.	Explain different types of joins in SQL with examples?
+
+Join is an operation in DBMS(Database Management System) that combines the row of two or more tables based on related columns between them. The main purpose of Join is to retrieve the data from multiple tables in other words Join is used to perform multi-table query. It is denoted by ⨝.
+Example
+Temp <- ⨝(student) S.roll==E.roll(Exam)
+where S and E are alias of the student and exam respectively Types of Join
+1.	Inner Join
+2.	Outer join Inner join
+Inner Join is a join operation in DBMS that combines two or more table based on related columns and return only rows that have matching values among tables. Inner join of two types.
+•	Equi Join
+•	Natural Join Equi Join
+Equi Join is a type of Inner join in which we use euivalence(‘=’) condition in join condition
+Example:
+Table A
+Column A	Column B
+a	a
+a	b
+Table B
+Column A	Column B
+a	a
+a	c
+A ⨝ A.Column B = B.Column B (B)
+Result:
+Column A	Column B
+a	a
+Natural Join
+Natural join is a type of inner join in which we not need of any comparison operators. In natural join columns should have the same name and domain. There should be at least one common attribute between two tables.
+ 
+Example:
+Table A
+Number	Square
+2	4
+3	9
+Table B
+Number	Cube
+2	8
+3	27
+A ⨝ B
+Number	Square	Cube
+2	4	8
+3	9	27
+Outer Join
+Outer join is a type of join that retrieve matching as well as non-maching records from related tables.
+There three types of outer join
+•	Left outer join
+•	Right outer join
+•	Full outer join
+Left Outer Join
+It is also called left join. This type of outer join retrieve all records from left table and retrive maching record from right table.
+Example: Table A
+Number	Square
+2	4
+3	9
+4	16
+Table B
+ 
+Number	Cube
+2	8
+3	27
+5	75
+A ⟕ B
+Result:
+Number	Square	Cube
+2	4	8
+3	9	27
+4	16	–
+Right Outer Join
+It is also called right join. This type of outer join retrieve all records from right table and retrive maching record from right table.
+Example:
+Table A and Table B are same as in left outer join
+A ⟖ B
+Number	Square	Cube
+2	4	8
+3	9	27
+5	–	75
+Full Outer Join
+In full outer join all the rows from both tables are inserted in result table
+Example:
+Table A and Table B are same as in left outer join
+A ⟗ B
+Result:
+Number	Square	Cube
+2	4	8
+ 
+Number	Square	Cube
+3	9	27
+4	16	–
+5	–	75
