@@ -1,0 +1,45 @@
+3.	PL/SQL code using triggers for updating and deleting data on any database?
+
+to insert Some as 12
+
+to delete
+
+Create (or) replace trigger +16.
+
+after
+
+delete on sailos
+
+for each row
+
+begin
+
+if (old.d=22) then
+
+raine application - emor
+
+(-20019, you Cannet delet this row');
+
+end it;
+
+end;
+
+/
+
+to update
+
+Create (or) replace trigger +23
+
+after update of id on sailors
+
+for each
+
+begin
+
+if (i new. sid<80) then
+
+Vaise - application-erior (-20017, "Cant update');
+
+end if;
+
+end;
