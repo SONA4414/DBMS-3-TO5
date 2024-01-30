@@ -1,0 +1,30 @@
+Unit-5
+1.	Explain about ACID properties of Transaction?
+Atomicity
+•	Atomicity guarantees that all of the commands that make up a transaction are treated as a single unit and either succeed or fail together.
+•	This is important as in the case of an unwanted event, like a crash or power outage, we can be sure of the state of the database.
+Consistency
+•	Consistency guarantees that changes made within a transaction are consistent with database constraints.
+•	This includes all rules, constraints, and triggers.
+•	If the data gets into an illegal state, the whole transaction fails.
+Isolation
+•	Isolation ensures that all transactions run in an isolated environment.
+•	That enables running transactions concurrently because transactions don’t interfere with each other.
+Durability
+•	Durability guarantees that once the transaction completes and changes are written to the database, they are persisted.
+•	This ensures that data within the system will persist even in the case of system failures like crashes or power outages.
+
+2.	Explain about conflict serializability with example?
+
+3.	Explain about remote backup system with neat diagram.
+ 
+•	Remote backup systems offer a flexible solution for transaction processing, enabling uninterrupted operations even in the event of primary site destruction.
+•	Data and log records from a primary site are continuously backed up into a remote backup site.
+•	To achieve 'wide range availability' of data, transaction processing can be performed at a primary site and a remote backup site where all data is duplicated.
+•	The remote site is also called ‘secondary site’.
+•	The remote site must be synchronized with the primary site, as updates are performed at the primary.
+•	In designing a remote backup system, the following points are important.
+a)	Detection of failure: It is important for the remote backup system to detect when the primary has failed.
+b)	Transfer of control: When the primary site fails, the backup site takes over the processing and becomes the new primary site.
+c)	Time to recover: If the log at the remote backup becomes large, recovery will take a long time.
+d)	Time to commit: A transaction's updates should be announced only after its log records reach the backup site to ensure durability.
